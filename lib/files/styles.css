@@ -1,0 +1,7 @@
+body {font-size: 16px;font-family: monospace;}
+.section-title > div {display: flex;flex-direction: column;justify-content: center;align-items: center;width: 100%;height: calc(100% - 1rem);}
+table {width: 100%;}
+td {width: 50%;text-align: center;}
+.term {font-size: 8px;}
+.symbol {font-family: sans-serif;font-size: 50px;}
+.selected {background-color: #bbb;}
