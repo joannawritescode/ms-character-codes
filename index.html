@@ -8,7 +8,7 @@
 
 <body class="bg-dark text-light">
 	<div class="container">
-		<div class="row">
+		<div class="row my-3">
 			<div class="col">
 				<h1>Alt Codes for Characters in Windows</h1>
 			</div>
@@ -16,9 +16,9 @@
 		<div class="row">
 			<div class="col">
 				<h2>Options</h2>
-				<div id="filters" class="row">
-					<div class="col">
-						<p>Show Baselines</p>
+				<div id="options" class="row my-4">
+					<div class="col d-flex align-items-center justify-content-around">
+						<h3 class="h6">Show Baselines</h3>
 						<div id="opt-baseline" class="btn-group" role="group" aria-label="Basic radio toggle button group">
 						  <input type="radio" class="btn-check" name="opt-baseline" id="opt-baseline-on" autocomplete="off">
 						  <label class="btn btn-outline-primary" for="opt-baseline-on">Yes</label>
@@ -26,16 +26,16 @@
 						  <label class="btn btn-outline-primary" for="opt-baseline-off">No</label>
 						</div>
 					</div>
-					<div class="col">
-						<p>Show Alt Codes</p>
+					<div class="col d-flex align-items-center justify-content-around">
+						<h3 class="h6">Show Alt Codes</h3>
 						<button class="opt-group collapsed btn btn-link p-0" id="filter_alt" data-bs-toggle="collapse" data-bs-target=".keys" aria-expanded="false"><span id="fa_show" class="btn btn-outline-primary rounded-0 rounded-start">Show</span><span id="fa_hide" class="btn btn-primary rounded-0 rounded-end">Hide</span></button>
 					</div>
-					<div class="col">
-						<p>Show terms</p>
+					<div class="col d-flex align-items-center justify-content-around">
+						<h3 class="h6">Show terms</h3>
 						<button class="opt-group collapsed btn btn-link p-0" id="filter_terms" data-bs-toggle="collapse" data-bs-target=".term" aria-expanded="false"><span id="ft_show" class="btn btn-outline-primary rounded-0 rounded-start">Show</span><span id="ft_hide" class="btn btn-primary rounded-0 rounded-end">Hide</span></button>
 					</div>
-					<div class="col">
-						<p>Click to copy to clipboard</p>
+					<div class="col d-flex align-items-center justify-content-around">
+						<h3 class="h6">Click to copy to clipboard</h3>
 						<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
 						  <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
 						  <label class="btn btn-outline-primary" for="btnradio1">Yes</label>
@@ -43,15 +43,22 @@
 						  <label class="btn btn-outline-primary" for="btnradio2">No</label>
 						</div>
 					</div>
-					<div class="col topics">
-						<p>Topics</p>
+				</div>
+				<h2>Filters</h2>
+				<div id="filters" class="row my-4">
+					<div class="col d-flex align-items-center justify-content-evenly topics">
 					</div>
-					<!-- div class="col"><input type="search"><button>Search</button></div-->
+					<div id="search" class="d-flex align-items-center justify-content-between ms-3">
+						<h3 class="h6 text-decoration-line-through">Search by term</h3>
+						<div class="ms-3 d-flex">
+							<input class="form-control rounded-0 rounded-start d-inline w-auto" disabled type="search" placeholder="not yet available"><button class="d-inline btn btn-primary rounded-0 rounded-end disabled text-decoration-line-through">Search</button>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 
-		<div class="row">
+		<div class="row my-4">
 			<div class="col">
 				<h2>Symbols</h2>
 				<div id="data" class="row row-cols-6"></div>
