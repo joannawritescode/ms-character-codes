@@ -13,11 +13,27 @@
 				<h1>Alt Codes for Characters in Windows</h1>
 			</div>
 		</div>
-
 		<div class="row">
 			<div class="col">
-				<h2>Filters</h2>
+				<h2>Options</h2>
 				<div id="filters" class="row">
+					<div class="col">
+						<p>Show Baselines</p>
+						<div id="opt-baseline" class="btn-group" role="group" aria-label="Basic radio toggle button group">
+						  <input type="radio" class="btn-check" name="opt-baseline" id="opt-baseline-on" autocomplete="off">
+						  <label class="btn btn-outline-primary" for="opt-baseline-on">Yes</label>
+						  <input type="radio" class="btn-check" name="opt-baseline" id="opt-baseline-off" autocomplete="off" checked>
+						  <label class="btn btn-outline-primary" for="opt-baseline-off">No</label>
+						</div>
+					</div>
+					<div class="col">
+						<p>Show Alt Codes</p>
+						<button class="opt-group collapsed btn btn-link p-0" id="filter_alt" data-bs-toggle="collapse" data-bs-target=".keys" aria-expanded="false"><span id="fa_show" class="btn btn-outline-primary rounded-0 rounded-start">Show</span><span id="fa_hide" class="btn btn-primary rounded-0 rounded-end">Hide</span></button>
+					</div>
+					<div class="col">
+						<p>Show terms</p>
+						<button class="opt-group collapsed btn btn-link p-0" id="filter_terms" data-bs-toggle="collapse" data-bs-target=".term" aria-expanded="false"><span id="ft_show" class="btn btn-outline-primary rounded-0 rounded-start">Show</span><span id="ft_hide" class="btn btn-primary rounded-0 rounded-end">Hide</span></button>
+					</div>
 					<div class="col">
 						<p>Click to copy to clipboard</p>
 						<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
@@ -26,14 +42,6 @@
 						  <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
 						  <label class="btn btn-outline-primary" for="btnradio2">No</label>
 						</div>
-					</div>
-					<div class="col">
-						<p>Show Alt Codes</p>
-						<button class="filter-group collapsed btn btn-link p-0" id="filter_alt" data-bs-toggle="collapse" data-bs-target=".keys" aria-expanded="false"><span id="fa_show" class="btn btn-outline-danger rounded-0 rounded-start">Show</span><span id="fa_hide" class="btn btn-danger rounded-0 rounded-end">Hide</span></button>
-					</div>
-					<div class="col">
-						<p>Show terms</p>
-						<button class="filter-group collapsed btn btn-link p-0" id="filter_terms" data-bs-toggle="collapse" data-bs-target=".term" aria-expanded="false"><span id="ft_show" class="btn btn-outline-danger rounded-0 rounded-start">Show</span><span id="ft_hide" class="btn btn-danger rounded-0 rounded-end">Hide</span></button>
 					</div>
 					<div class="col topics">
 						<p>Topics</p>
