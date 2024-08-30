@@ -7,13 +7,47 @@
 </head>
 
 <body class="bg-dark text-light">
-	<div class="container p-0">
-		<h1>Alt Codes for Characters in Windows</h1>
-		<h2>Filters <small>(coming soon)</small></h2>
-		<div id="filters" class="row">
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>Alt Codes for Characters in Windows</h1>
+			</div>
 		</div>
-		<h2>Symbols</h2>
-		<div id="data" class="row row-cols-4">
+
+		<div class="row">
+			<div class="col">
+				<h2>Filters</h2>
+				<div id="filters" class="row">
+					<div class="col">
+						<p>Click to copy to clipboard</p>
+						<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+						  <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+						  <label class="btn btn-outline-primary" for="btnradio1">Yes</label>
+						  <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+						  <label class="btn btn-outline-primary" for="btnradio2">No</label>
+						</div>
+					</div>
+					<div class="col">
+						<p>Show Alt Codes</p>
+						<button class="filter-group collapsed btn btn-link p-0" id="filter_alt" data-bs-toggle="collapse" data-bs-target=".keys" aria-expanded="false"><span id="fa_show" class="btn btn-outline-danger rounded-0 rounded-start">Show</span><span id="fa_hide" class="btn btn-danger rounded-0 rounded-end">Hide</span></button>
+					</div>
+					<div class="col">
+						<p>Show terms</p>
+						<button class="filter-group collapsed btn btn-link p-0" id="filter_terms" data-bs-toggle="collapse" data-bs-target=".term" aria-expanded="false"><span id="ft_show" class="btn btn-outline-danger rounded-0 rounded-start">Show</span><span id="ft_hide" class="btn btn-danger rounded-0 rounded-end">Hide</span></button>
+					</div>
+					<div class="col topics">
+						<p>Topics</p>
+					</div>
+					<!-- div class="col"><input type="search"><button>Search</button></div-->
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col">
+				<h2>Symbols</h2>
+				<div id="data" class="row row-cols-6"></div>
+			</div>
 		</div>
 	</div>
 
